@@ -150,12 +150,39 @@ body{
     margin-top: 50px;
     flex-shrink: 0;
     background-color: $footerColor;
-    padding: 0px 300px 0px 300px;
+    padding: 20px 300px 20px 300px;
     .title{
         &__text{
             font-family: $headingFont;
             color: $textColor;
-            text-transform: uppercase;
+        }
+    }
+    .annotation{
+        max-width: 450px;
+        .text{
+            font-family: $mainFont;
+            font-size: 14px;
+            color: #C5C5C5;
+        }
+    }
+    .contacts{
+        .email{
+            display: flex;
+            align-items: center;
+            span{
+                margin-left: 5px;
+                font-family: $mainFont;
+                font-size: 14px;
+                font-weight: bold;
+                color: #C5C5C5;
+            }
+        }
+        .other{
+            margin-top: 10px;
+            display: flex;
+            .contact-github{
+                margin-left: 5px;
+            }
         }
     }
 }
